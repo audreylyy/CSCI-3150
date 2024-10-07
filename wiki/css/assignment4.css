@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Roboto&display=swap');
+
+body {
+    background: #F6F6F6;
+    color: #15234F;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+
+}
+#rio-olympics-img {
+    float: left; 
+    margin: 20px 40px 20px 0;
+    width: 400px;
+}
+
+#william-g-img {
+    float: right;
+    margin: 20px 0px 20px 40; 
+    width: 240px;
+}
+
+#mazanar-img {
+    float: left;
+    margin: 20px 40px 20px 0; 
+    width: 440px;
+}
+
+#volleyball-court-img {
+    float: left;
+    margin: 20px 40px 20px 0; 
+    width: 240px;
+}
+
+#monks-volleyball {
+    float: right;
+    margin: 20px 0px 20px 40px; 
+    width: 440px;
+}
+
+#scoreboard {
+    float: left;
+    margin: 20px 40px 20px 0px; 
+    width: 340px;
+}
+
+#serve {
+    float: left;
+    margin: 20px 40px 20px 0px; 
+    width: 240px;
+}
+
+#pass {
+    float: right;
+    margin: 20px 0px 20px 40px; 
+    width: 340px;
+}
+
+#jumpset {
+    float: left;
+    margin: 20px 40px 20px 0px; 
+    width: 340px;
+}
+
+#attack {
+    float: right;
+    margin: 20px 0px 20px 40px; 
+    width: 340px;
+}
+
+#huddle {
+    float: right;
+    margin: 20px 0px 20px 40px; 
+    width: 240px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.3em;
+}
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Gowun Batang", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+
+    nav ul li a:link {
+        color: #15234F;
+    }
+
+    nav ul li a:visited {
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color:#285094;
+        background: #91D4ED;
+    }
+
+    nav ul li a:active {
+        color: #064023;
+    }
+
+    figcaption {
+        font-size: 0.8em; /* Reduce the font size to make it smaller */
+        color: #555555; /* Optional: You can change the color to a lighter shade for subtlety */
+    }
+    
+    
