@@ -1,0 +1,139 @@
+
+
+body {
+    background: #F6F6F6;
+    color: #15234F;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.3em;
+}
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Gowun Batang", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h1 {
+        font-size: 2.3em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+
+    nav ul li a:link {
+        color: #15234F;
+    }
+
+    nav ul li a:visited {
+        color: black;
+    }
+
+    nav ul li a:hover {
+        color:#285094;
+        background: #91D4ED;
+    }
+
+    nav ul li a:active {
+        color: #064023;
+    }
+
+
+    table, th, td {
+        border: 2px solid black; /* Add borders to the entire table, including headers */
+        border-collapse: collapse; /* Ensure borders don't have gaps between them */
+    }
+    
+    td, th {
+        padding: 8px; /* Optional: Add padding for better readability */
+        text-align: center; /* Keep text centered */
+    }
+    
+    form {
+
+        input:focus {
+            background: white;
+            color: black;
+            border: 4px solid yellow;
+        }
+    
+        input:valid {
+            border:2px solid green;
+        }
+    
+        input:invalid {
+            border: 1px dotted red;
+        }
+    
+        label {
+            display: block;
+            margin-bottom:10px;
+        }
+    
+        /* will target any field that is not submit and is valid */
+        input:not([type="submit"]):valid {
+            border-color: #7d79bd;
+            box-shadow: 0 0 3px #3d9ca8;
+        }
+    
+        /* hide and show list of input requirements when interacting with input */
+        input:not([type="submit"]) + .inputRequirements {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease-out;
+        }
+    
+        input:not([type="submit"]):hover + .inputRequirements,
+        input:not([type="submit"]):focus + .inputRequirements,
+        input:not([type="submit"]):active + .inputRequirements {
+            max-height: 1000px; /* any large number (bigger then the .inputRequirements list) */
+            transition: max-height 1s ease-in;
+        }
+  
+    }
+    
+    
