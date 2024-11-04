@@ -49,6 +49,18 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+.sr-only-nav {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
 @media screen and (max-width: 640px) {
     nav ul {
         flex-direction: column;
@@ -75,6 +87,9 @@ h1 {
     font-size: 4em;
 }
 
+h3 {
+    font-size: 1em;
+}
 
 h1,
 h2,
