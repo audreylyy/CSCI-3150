@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
 *,
 *:before,
 *:after {
@@ -9,6 +11,12 @@
 body {
     line-height: 1.6;
     color: #424242;
+    font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "DM Serif Display", serif;
 }
 
 nav {
@@ -88,7 +96,7 @@ h2 {
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 1em 0;
     text-align: center;
     line-height: 1.5em; 
