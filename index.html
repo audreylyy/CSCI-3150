@@ -1,48 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Home</title>
-        <style>
-            h1 {
-                font-size: 50px;
-                font-family:Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            h2 {
-                font-size: 40px;
-                font-family:Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            p {
-                font-size: 30px;
-                font-family:Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            #links {
-                width: 200px;
-                margin: 0 auto;
-                text-align: center;
-                font-size: 20px;
-                font-family:Arial, Helvetica, sans-serif;
-            }
-        </style>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSCI 3105</title>
+            <!-- CSS here -->
+            <link href="index.css" rel="stylesheet">
+        
     </head>
     <body>
-        <div id = "intro">
-            <h1> 
-                CSCI 3150 - Universal Design
-            </h1>
-            <h2>
-                Audrey Ly
-            </h2>
-            <p>
-                Hi my name is Audrey! I am a junior majoring in CS, and am from Aurora, CO. <br>
-                In my free time I like playing pickleball, hanging out with friends, and going to concerts.</p>
-            <div id= "links">
-                <a href ="assignments/wiki/assignment4.html">Wikipedia Assignment</a><br>
-                <a href ="assignments/tables/assignment5.html">Tables Assignment</a><br>
-                <a href ="accessible-layout/assignment6.html">Accessible CSS Assignment</a><br>
-            </div>
+        <div class="container">
+            <header>
+                <h1>CSCI 3150</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="assignments/wiki/assignment4.html">Lab 1</a></li>
+                    <li><a href="assignments/tables/assignment5.html">Lab 2</a></li>
+                    <li><a href="assignments/accessible-layout/assignment6.html">Lab 3</a></li>
+                </ul>
+            </nav>
+
+            <main id="main">
+                <h2>About Me!</h2>
+                <p>
+                    Hi! My name is Audrey and I am a junior at CU Boulder with a major in Computer Science and minor in Business. I am originally from Denver, Colorado
+                    and have lived in Colorado all my life! I am currently the Vice President of a club here at CU Boulder called Women in Computing, a club that
+                    empowers women in STEM. In my free time, I can be found hanging out with my friends, going to concerts, playing pickleball, travelling, or coding! 
+                    I am excited to learn more about making web pages accessible, and improving my front end design skills.
+                </p>
+            </main>
+            
+            <aside id="aside1">
+                <figure>
+                    <img src="me.JPG" alt="Picture of Audrey">
+                </figure>
+            </aside>
+            
+
+            <footer>
+                <small>thanks for checking my page out!
+                </small>
+            </footer>
         </div>
     </body>
 </html>
