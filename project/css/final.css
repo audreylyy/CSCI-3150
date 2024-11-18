@@ -1,0 +1,137 @@
+body {
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #333; /* Improved contrast */
+    line-height: 1.6; /* Enhanced readability */
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* Skip link styling */
+.skip-link {
+    background: #065596;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    transform: translateX(0); 
+    outline: 2px dashed #ffffff;
+}
+
+/* Header styling */
+header {
+    background: #B9C4FF;
+    padding: 5px
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    font-family: "Prata", serif;
+    color: #525252; 
+}
+
+h2, h3 {
+    font-family: "Prata", serif;
+    font-weight: normal;
+    color: #444; /* Better visibility */
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+nav {
+    background: #D5E2FF; 
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.3em;
+    color: #313131; /* White for readability */
+    text-decoration: none;
+    padding: 0.1em 1em;
+    display: block;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #1b4063; /* Visual feedback */
+    outline: none;
+}
+
+/* Main content styling */
+main {
+    max-width: 960px;
+    margin: 2em auto;
+    background: #FAFAFA;
+    border: 2px solid #454545;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #7f7e80;
+    padding: 1.5em;
+}
+
+p {
+    margin: 1.5em 0;
+    text-align: left;
+    color: #454545;
+}
+
+/* Footer styling */
+footer {
+    padding: 1em 0;
+    background: #D5E2FF;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+    color: #454545;
+}
+
+footer small {
+    color: #454545;
+}
