@@ -9,18 +9,6 @@ body {
     padding: 0;
 }
 
-/* .sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-} */
-
 .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -33,19 +21,18 @@ body {
     width: 1px;
 }
 
-/* When the sr-only element is focused or becomes visible */
 .sr-only:focus, 
 .sr-only:active {
-    position: static; /* Make it visible */
-    clip: auto; /* Remove clipping */
-    height: auto; /* Restore size */
-    width: auto; /* Restore width */
-    margin: 0; /* Adjust margin */
-    padding: 8px 12px; /* Add padding for better appearance */
-    background: #4e5052; /* Dark background for high contrast */
-    color: #ffffff; /* Bright text for contrast */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    font-weight: bold; /* Make the text more readable */
+    position: static;
+    clip: auto;
+    height: auto; 
+    width: auto;
+    margin: 0;
+    padding: 8px 12px;
+    background: #4e5052;
+    color: #ffffff;
+    border-radius: 5px; 
+    font-weight: bold;
 }
 
 /* Skip link styling */
@@ -91,7 +78,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 h4 {
@@ -189,6 +176,22 @@ footer small {
 
 li {
     text-align: left;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+ol li::marker {
+    font-family: "Prata", serif;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 a {
