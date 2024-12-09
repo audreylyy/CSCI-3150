@@ -14,6 +14,25 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+.skip-link {
+    position: absolute;
+    background-color: #FFD8E2;
+    color: #424242;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    transform: translateX(0); 
+}
+
+
 h1,
 h2 {
     font-family: "DM Serif Display", serif;
@@ -49,7 +68,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4E4747;
+    color: #000000;
+    background-color: #E4E4E4;
 }
 
 .sr-only {
@@ -76,7 +96,11 @@ nav ul li a:hover {
         width: 100%;
         color: #065596;
         border: 1px solid #ccc;
-        font-size: 1.2em;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 3em;
     }
 }
 
@@ -166,9 +190,18 @@ nav {
     background: #FDEDF1;
 }
 
-footer {
+/* footer {
     grid-area: footy;
     background: #FDEDF1;
+} */
+
+footer {
+    grid-area: footy;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.2em;
+    background: #FDEDF1;
+    color: #424242;
 }
 
 
