@@ -11,8 +11,9 @@
 
 <body>
 
-    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <a class="skip-link" href="#contentMain">Skip to main content</a>
 
+    <div class="container">
     <header>
 
         <h1>Universal Design and Accessibility</h1>
@@ -35,53 +36,129 @@
 
     </nav>
 
+    <div class="dropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Contents</button>
+        <div class="dropdown-content" role="menu">
+            <a href="#semantic" role="menuitem" tabindex="0">Semantic Structure</a>
+            <a href="#forms" role="menuitem" tabindex="0">Accessible Forms</a>
+            <a href="#gridlayout" role="menuitem" tabindex="0">CSS Grid Layout</a>
+            <a href="#flexboxlay" role="menuitem" tabindex="0">Flexbox Layout</a>
+            <a href="#tables" role="menuitem" tabindex="0">Accessible Tables</a>
+            <a href="#testing" role="menuitem" tabindex="0">Testing</a>
+        </div>
+    </div>
+
     <main id="contentMain">
 
-        <section>
-
-            <h2>Apply 7 Principles of Universal Design</h2>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-
-        </section>
 
         <section>
 
             <h2>How Can we Apply This?</h2>
-            <h3>Semantic Structure</h3>
+            <h3 id="semantic">Semantic Structure</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-            <h3>Accessible Forms</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-            <h3>CSS Grid Layout</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-            <h3>Flexbox Layout</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-            <h3>Accessible Tables</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-            <h3>Testing</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius
-                natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Ensuring correct structure and semantic markups helps to ensure a web page is utilizing the benefits
+                provided by Web Standards. Semantic structure helps with not only the presentation of the content but
+                also structures it so the content can be efficiently used by Assistive Technology and systems that
+                analyze web pages.
             </p>
 
+            <p>
+            Content hierarchy is extremely important for humans and machines to understand the information structure
+            provided to them. Using headings was not necessarily created with visual design in mind, but provides that
+            information needed to understand structure.
+            </p>
+
+            <p>
+                Page regions like
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>
+                    &lt;aside&gt;</code>, <code>&lt;footer&gt;</code> help to define the semantic structure of a
+                page. This assists
+                screen readers to effectively navigate through these areas. These elements cannot be
+                nested in each other, or else they are useless to a screen reader.
+            </p>
+
+            
+            <h3 id="forms">Accessible Forms</h3>
+            <p>
+                When creating forms, we need to make sure they are accessible. If they are accessible it makes it easier
+                for the user to understand and use. Putting specific instructions in form fields and fields should be
+                showed to the users. If users do not complete it right, an error should be shown clearly. We also need
+                to ensure that forms cannot just be solely used with a mouse for users who navigate pages with
+                keyboards.
+            </p>
+
+            <p>
+                Labels specifically show the function of what a field on a form is supposed to do. Using
+                <code>&lt;label&gt;</code> makes it so a label is connected to that field.
+            </p>
+
+            <p>Read more about specific labels, id's, and form usage here: <a class="form-url"
+                    href="https://webaim.org/techniques/forms/controls">Accessible Form Controls</a></p>
+
+            <h3 id="gridlayout">CSS Grid Layout</h3>
+            <p>
+                Grid layouts changed the way web developers design interfaces. Using grid in CSS solves layout issues
+                and makes them more aesthetically pleasing to the eye, while ensuring it doesn’t change the ordering of
+                screen readers. CSS grid layout allows us to move items without having to make big changes to layouts.
+            </p>
+
+            <p>Read more about how to make acessible CSS grid layouts: <a class="grid-url"
+                    href="https://css-tricks.com/snippets/css/complete-guide-grid/">Accessible Grid</a></p>
+
+            <h3 id="flexboxlay">Flexbox Layout</h3>
+            <p>
+                Flexbox allows us as web developers to efficiently lay out, design, align, and distribute space in
+                different items in a container dynamically. It gives the container the ability to change its item’s size
+                (width/height) to best fill the space. This helps to accommodate all devices and screen sizes, which is
+                especially important for mobile use.
+            </p>
+
+            <p>Read more about accessible flexbox: <a class="flex-url"
+                    href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Accessible Flexbox</a></p>
+
+            <h3 id="tables">Accessible Tables</h3>
+            <p>
+                We can use tables to logically organize data in grids. To make them accessible we need to use markups to
+                clearly indicate different cells and define relationships so assistive technologies can utilize it.
+            </p>
+
+            <p>
+                We can use <code>&lt;th&gt;</code> to mark header cells, <code>&lt;td&gt;</code> for data cells.
+            </p>
+
+            <p>
+                If our tables don’t use clear structures to link the whole thing together, it creates barriers for those
+                using assistive technologies. People using screen readers are able to have row and columns read aloud as
+                they navigate through the table, and hear what header the data is associated with.
+            </p>
+
+            <p>Read more about accessible tables: <a class="table-url"
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced">Accessible Tables</a></p>
+
+            <h3 id="testing">Testing</h3>
+            <p>
+                There are many different tools that are free and easily accessible for us as web developers to check if
+                our sites meet accessibility. Tools like WAVE Evaluation tool can check if color contrast is clear for
+                users with visual impairments, and also checks it meets a number of universal design guidelines. The
+                WebDev Toolbar is also a chrome extension that checks semantic structures, alt images, validate
+                accessibility, CSS, and HTML, and more. We can go through the WCAG guidelines and check if our website
+                meets them. We can also test screen reading on our devices to see if the information is being properly
+                conveyed to users.
+            </p>
+
+            <p>
+                Some specific things we can check ourselves is the page title (<code>&lt;title&gt;</code> in
+                <code>&lt;head&gt;</code>). The title should convey where the user is as they move tabs. It should
+                briefly describe the content of the page. We can also check alt text on images and make sure screen
+                readers properly convey what it is showing. To use alt text in our code we can just do
+                <code>&lt;img src = “pointer” alt = “description of image”&gt;</code>. Checking that all heading have
+                meaningful hierarchy is also important, there should only be one heading level 1. Using tools like Adobe
+                color to check color contrast and WAVE can check if there is clear contrast between the text and
+                background. We can also check the website is navigable through keyboard by tabbing through the webpage.
+            </p>
+
+            <p>Read more about testing: <a class="test-url"
+                href="https://www.w3.org/WAI/test-evaluate/preliminary/#title">Testing for Accessibility</a></p>
         </section>
 
 
@@ -91,6 +168,7 @@
         <p>Designed by Audrey Ly<small>&copy; 2024</small></p>
 
     </footer>
+</div>
 
 </body>
 

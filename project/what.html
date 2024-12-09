@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,101 +8,275 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/final.css">
 </head>
+
 <body>
 
-    <a class="skip-link" href="#maincontent">Skip to main content</a>
-       
+    <a class="skip-link" href="#contentMain">Skip to main content</a>
+
+    <div class="container">
     <header>
 
         <h1>Universal Design and Accessibility</h1>
 
     </header>
 
-    <nav>
+        <nav>
 
-        <h2 class="sr-only">Main Navigation</h2>
+            <h2 class="sr-only">Main Navigation</h2>
 
-        <ul>
+            <ul>
 
-            <li><a href="what.html">What</a></li>
+                <li><a href="what.html">What</a></li>
 
-            <li><a href="why.html">Why</a></li>
+                <li><a href="why.html">Why</a></li>
 
-            <li><a href="how.html">How</a></li>
+                <li><a href="how.html">How</a></li>
 
-        </ul>
+            </ul>
 
-    </nav>
+        </nav>
 
-    <main id="contentMain">
+        <div class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Contents</button>
+            <div class="dropdown-content" role="menu">
+                <a href="#whatIs" role="menuitem" tabindex="0">What is Universal Design?</a>
+                <a href="#7principles" role="menuitem" tabindex="0">7 Principles of UD</a>
+                <a href="#norman" role="menuitem" tabindex="0">Norman's Design Concepts</a>
+                <a href="#wcag" role="menuitem" tabindex="0">WCAG</a>
+            </div>
+        </div>
 
-        <section>
+        <main id="contentMain">
 
-            <h2>What is Universal Design?</h2>
+            <section>
+
+                <h2 id="whatIs">What is Universal Design?</h2>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Universal Design is creating a product that can be accessed, utilized, and understood by any person,
+                    regardless of their age, ability, or disability. It is created on the view that the spectrum of
+                    people’s
+                    abilities is wide and our abilities can change over time. We can use universal design to meet the
+                    needs
+                    of all users to the greatest extent without having to adapt or make designs for different
+                    populations.
+                    This not only makes it easier for the user themselves, but us as web developers and designers as it
+                    sets
+                    out guidelines for how to design a universally accessible website so different versions do not have
+                    to
+                    be adapted.
+                </p>
+                <p>
+                    In universal design, we consider the diverse needs and abilities of all users in creation to meet
+                    all
+                    users needs. If our products are universally designed, and are accessible, usable it is a good
+                    design.
+                </p>
+            </section>
+
+            <section>
+
+                <h2 id="7principles">7 Principles of Universal Design</h2>
+
+                <p>
+                    In 1997, Ronald Mace and his colleagues at North Carolina State University developed the 7
+                    Principles of
+                    Universal Design
                 </p>
 
-        </section>
+                <ol>
+                    <li>
+                        <h4>Equitable Use</h4>
+                        <p>Design is useful and marketable to people with diverse abilities.</p>
+                        <ul>
+                            <li>Provide same means of use for all users, identical when possible, equivalent when not
+                            </li>
+                            <li>Avoid segregating or stigmatizing any users</li>
+                            <li>Provisions for privacy, security, and safety should be equally available to all users
+                            </li>
+                            <li>Make the design appealing to all users.</li>
+                        </ul>
+                    </li>
 
-        <section>
+                    <li>
+                        <h4>Flexibility in Use</h4>
+                        <p>The design accommodates a wide range of individual preferences and abilities</p>
+                        <ul>
+                            <li>Provide choice in methods of use</li>
+                            <li>Accommodate right- or left-handed access and use</li>
+                            <li>Facilitate the user's accuracy and precision</li>
+                            <li>Provide adaptability to the user's pace</li>
+                        </ul>
+                    </li>
 
-            <h2>History of Accessible Internet</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
+                    <li>
+                        <h4>Simple and Intuitive Use</h4>
+                        <p>Use of the design is easy to understand, regardless of the user's experience, knowledge,
+                            language
+                            skills, or current concentration level</p>
+                        <ul>
+                            <li>Eliminate unnecessary complexity</li>
+                            <li>Be consistent with user expectations and intuition</li>
+                            <li>Accommodate a wide range of literacy and language skills</li>
+                            <li>Arrange information consistent with its importance</li>
+                            <li>Provide effective prompting and feedback during and after task completion</li>
+                        </ul>
+                    </li>
 
-        </section>
+                    <li>
+                        <h4>Perceptible Information</h4>
+                        <p>The design communicates necessary information effectively to the user, regardless of ambient
+                            conditions or the user's sensory abilities</p>
+                        <ul>
+                            <li>Use different modes (pictorial, verbal, tactile) for redundant presentation of essential
+                                information</li>
+                            <li>Provide adequate contrast between essential information and its surroundings</li>
+                            <li>Maximize "legibility" of essential information</li>
+                            <li>Differentiate elements in ways that can be described (i.e., make it easy to give
+                                instructions or directions)</li>
+                            <li>Provide compatibility with a variety of techniques or devices used by people with
+                                sensory
+                                limitations</li>
+                        </ul>
+                    </li>
 
-        <section>
-
-            <h2>Norman's Design Concepts</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-
-        </section>
-
-        <section>
-
-            <h2>7 Principles of Universal Design</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-
-        </section>
-
-        <section>
-
-            <h2>Guidelines</h2>
-
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
-
-                <h3>W3C</h3>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    <li>
+                        <h4>Tolerance for Error</h4>
+                        <p>The design minimizes hazards and the adverse consequences of accidental or unintended actions
                         </p>
-                <h3>WCAG</h3>
+                        <ul>
+                            <li>Arrange elements to minimize hazards and errors: most used elements, most accessible;
+                                hazardous elements eliminated, isolated, or shielded</li>
+                            <li>Provide warnings of hazards and errors</li>
+                            <li>Provide fail safe features</li>
+                            <li>Discourage unconscious action in tasks that require vigilance</li>
+                        </ul>
+                    </li>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
+                    <li>
+                        <h4>Low Physical Effort</h4>
+                        <p>The design can be used efficiently and comfortably and with a minimum of fatigue</p>
+                        <ul>
+                            <li>Allow user to maintain a neutral body position</li>
+                            <li>Use reasonable operating forces</li>
+                            <li>Minimize repetitive actions</li>
+                            <li>Minimize sustained physical effort</li>
+                        </ul>
+                    </li>
 
-        </section>
+                    <li>
+                        <h4>Size and Space for Approach and Use</h4>
+                        <p>Appropriate size and space is provided for approach, reach, manipulation, and use regardless
+                            of
+                            user's body size, posture, or mobility</p>
+                        <ul>
+                            <li>Provide a clear line of sight to important elements for any seated or standing user</li>
+                            <li>Make reach to all components comfortable for any seated or standing user</li>
+                            <li>Accommodate variations in hand and grip size</li>
+                            <li>Provide adequate space for the use of assistive devices or personal assistance</li>
+                        </ul>
+                    </li>
+                </ol>
 
-    </main>
+            </section>
 
-    <footer>
-        <p>Designed by Audrey Ly<small>&copy; 2024</small></p>
+            <section>
 
-    </footer>
-    
+                <h2 id="norman">Norman's Design Concepts</h2>
+
+                <ul>
+                    <li>
+                        <h4>Visibility</h4>
+                        <p>If functions are visible, users are more likely know what to do. If they are hidden, users
+                            can
+                            struggle to find them and use them</p>
+                    </li>
+
+                    <li>
+                        <h4>Feedback</h4>
+                        <p>When a user completes an action, feedback can send back information on what the user did, so
+                            they
+                            are aware if their action is successful or not</p>
+                    </li>
+
+                    <li>
+                        <h4>Constraints</h4>
+                        <p>A user is restricted from doing certain actions to prevent errors, misuse, or damage to the
+                            device or user</p>
+                    </li>
+
+                    <li>
+                        <h4>Mapping</h4>
+                        <p>The presentation of controls that will mirror the operation that is going to be performed. It
+                            can
+                            also with position/proximity indicate the device/component associated with the control</p>
+                    </li>
+
+                    <li>
+                        <h4>Consistency</h4>
+                        <p>Design interfaces to have similar operations and similar elements to achieve similar tasks
+                        </p>
+                    </li>
+
+                    <li>
+                        <h4>Affordance</h4>
+                        <p>The link between how things look and how they’re used. A mouse has is an example of an item
+                            having good affordance. The buttons on a mouse invite pushing</p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+
+                <h2 id="wcag">WCAG</h2>
+
+
+                <p>
+                    Web Content Accessibility Guidelines (WCAG) are guidelines that define how to make web content
+                    accessible to people with disabilities, other individuals with abilities that change due to aging,
+                    and
+                    can help improve usability for users in general. WCAG helps to develop web accessibility standards
+                    for
+                    web and software developers.
+                </p>
+
+                <h3>WCAG Principles</h3>
+
+                <ul>
+                    <li>
+                        <h4>Perceivable</h4>
+                        <p>Information and user interface components are presented in a way users can see/hear</p>
+                    </li>
+
+                    <li>
+                        <h4>Operable</h4>
+                        <p>Designed so users can interact with them and support assistive technologies</p>
+                    </li>
+
+                    <li>
+                        <h4>Understandable</h4>
+                        <p>Information and operation of user interface clearly and consistently communicates content so
+                            it is readable</p>
+                    </li>
+
+                    <li>
+                        <h4>Robust</h4>
+                        <p>Content must be written so it can be interpreted reliably by wide variety of user agents,
+                            including assistive technologies</p>
+                    </li>
+                </ul>
+
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Designed by Audrey Ly<small>&copy; 2024</small></p>
+
+        </footer>
+    </div>
 </body>
+
 </html>

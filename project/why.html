@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/final.css">
 </head>
+
 <body>
 
     <a class="skip-link" href="#maincontent">Skip to main content</a>
-       
+
+    <div class="container">
     <header>
 
         <h1>Universal Design and Accessibility</h1>
@@ -33,22 +36,54 @@
 
     </nav>
 
+
+    <div class="dropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Contents</button>
+        <div class="dropdown-content" role="menu">
+            <a href="#diversity" role="menuitem" tabindex="0">Diversity of Web Users</a>
+            <a href="#whyWeNeed" role="menuitem" tabindex="0">Why Do We Need It?</a>
+        </div>
+    </div>
+
     <main id="contentMain">
 
         <section>
 
             <h2>Importance</h2>
-            <h3>Diversity of Web Users</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </p>
-            <h3>Why do we need it?</h3>
+            <h3 id="diversity">Diversity of Web Users</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Ensuring a web for everyone, means people with different abilities can use the web to the capability
+                it's intended for. Every person is different and unique, we all have diverse abilities, preferences,
+                skills, etc and this all affects the way we use technology.
             </p>
-            <h3>What are benefits?</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis rutrum nunc ac varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Because everyone has different abilities, we have to consider different things. One is age-related
+                impairments, where older people struggle to use technology. We also consider individuals with multiple
+                disabilities, which can affect how they interact with digital devices. Individuals with health
+                conditions that can affect their concentration, stamina, etc also have to be considered because their
+                symptoms can impact how they use technology and for how long. Others can experience recurring functional
+                limitations that affect their use of technology. Some people are temporarily impaired and struggle to
+                use technology. There also exists situational limitations where there are impairments in using
+                technology in different situations, like not being able to hear audio, etc.
+            </p>
+            <h3 id="whyWeNeed">Why do we Need it?</h3>
+            <p>
+                The diversity of web users is greatly spread out and not just based on disabilities, so it is important
+                to use universal design guidelines to build websites that everyone can use and enjoy despite their
+                limitations.
+            </p>
+
+            <p>
+                The World Health Organization estimates 16% of the world's population experience disabilities. This is
+                about 1.3 billion people. The number only continues to rise with the growing population and with an 
+                aging population. In the United States, 1 in 4 people have a disability. 
+            </p>
+
+            <p>
+                It is increasingly important to make sure technology is accessible for everyone and it can be utilized
+                by everyone. Much of the world is increasingly using technology, and leaving behind a population by not
+                making the web accessible is leaving them at a disadvantage and is not equitable. By applying universal
+                design on webpages, we can ensure that all users are able to fully maximize the capabilities of the Internet.
             </p>
 
         </section>
@@ -59,6 +94,8 @@
         <p>Designed by Audrey Ly<small>&copy; 2024</small></p>
 
     </footer>
-    
+    </div>
+
 </body>
+
 </html>
