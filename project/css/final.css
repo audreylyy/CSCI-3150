@@ -48,7 +48,7 @@ h1 {
     font-size: 2.5em;
     margin: 0.5em 0;
     font-family: "Prata", serif;
-    color: #EFEDEF; 
+    color: #FFFFFF; 
 }
 
 h2, h3, h4 {
@@ -110,7 +110,7 @@ nav ul {
 nav ul li a {
     font-family: "Prata", serif;
     font-size: 1.3em;
-    color: #EFEDEF;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 0.1em 1em;
     display: block;
@@ -153,11 +153,11 @@ footer p {
     text-align: center;
     margin: 0;
     font-size: 0.9em;
-    color: #EFEDEF;
+    color: #FFFFFF;
 }
 
 footer small {
-    color: #EFEDEF;
+    color: #FFFFFF;
 }
 
 li {
@@ -181,15 +181,12 @@ a:focus {
 
 .dropbtn {
     background-color: #595957;
-    color: #EFEDEF;
+    color: #FFFFFF                       ;
     padding: 13px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    position: relative;
-    left: -50px; 
-    top: 10px;
 }
 
 .dropbtn:hover,
