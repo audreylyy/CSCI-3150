@@ -9,6 +9,18 @@ body {
     padding: 0;
 }
 
+/* .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+} */
+
 .sr-only {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -19,6 +31,21 @@ body {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+/* When the sr-only element is focused or becomes visible */
+.sr-only:focus, 
+.sr-only:active {
+    position: static; /* Make it visible */
+    clip: auto; /* Remove clipping */
+    height: auto; /* Restore size */
+    width: auto; /* Restore width */
+    margin: 0; /* Adjust margin */
+    padding: 8px 12px; /* Add padding for better appearance */
+    background: #4e5052; /* Dark background for high contrast */
+    color: #ffffff; /* Bright text for contrast */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-weight: bold; /* Make the text more readable */
 }
 
 /* Skip link styling */
@@ -120,7 +147,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
 
-    color: #1b4063;
+    color: #595957;
     font-weight: 800;
 }
 
