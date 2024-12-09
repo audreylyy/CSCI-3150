@@ -204,8 +204,8 @@ a {
 a:hover,
 a:focus {
 
-    background-color: rgb(255, 255, 255);
-    color: #313131;
+    background-color: #313131;
+    color: rgb(255, 255, 255);
     font-weight: 800;
 }
 
